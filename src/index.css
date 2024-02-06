@@ -5,9 +5,28 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: aqua;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+#next-button {
+  margin-top: 20px;
+  margin-left: 30px;
+  border-radius: 7px;
+}
+
+#previous-button {
+  margin-top: 20px;
+  margin-left: 30px;
+  border-radius: 7px;
+}
+
+#submit-button {
+  margin-top: 20px;
+  margin-left: 30px;
+  border-radius: 7px;
 }
