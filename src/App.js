@@ -1,6 +1,7 @@
 // App.js
 import React, { useState } from 'react';
 import Question from './Components/Question';
+import Header from './Components/Header';
 import './App.css';
 import './index.css';
 
@@ -90,12 +91,28 @@ const App = () => {
     const currentQuestion = questionsData[currentQuestionIndex];
 
     if (selectedAnswer === currentQuestion.correctAnswer) {
-      // Increment the score by 1 for each correct answer
       setScore(score + 1);
     }
 
-    // Move to the next question
     setCurrentQuestionIndex(currentQuestionIndex + 1);
+  };
+
+  const calculatePercentage = () => {
+    return (score / questionsData.length) * 100;
+  };
+
+  const calculateGrade = (percentage) => {
+    if (percentage >= 90) {
+      return 'A';
+    } else if (percentage >= 80) {
+      return 'B';
+    } else if (percentage >= 70) {
+      return 'C';
+    } else if (percentage >= 60) {
+      return 'D';
+    } else {
+      return 'F';
+    }
   };
 
   const handleNext = () => {
@@ -106,10 +123,14 @@ const App = () => {
     setCurrentQuestionIndex(currentQuestionIndex - 1);
   };
 
+  const percentage = calculatePercentage();
+  const grade = calculateGrade(percentage);
+
   return (
     <div>
+      <Header />
       <div>
-        <p id="score">Score: {score}</p>
+        <p>Score: {score}</p>
       </div>
 
       {currentQuestionIndex < questionsData.length ? (
@@ -120,19 +141,20 @@ const App = () => {
       ) : (
         <div>
           <h2>Game Over!</h2>
-          <p>Your final score is: {score}</p>
+          <p>Your final score is: {percentage.toFixed(1)}%</p>
+          <p>Grade: {grade}</p>
         </div>
       )}
 
       <div>
         {currentQuestionIndex > 0 && (
           <button id="previous-button" onClick={handlePrevious}>
-            ← Previous
+            Previous
           </button>
         )}
         {currentQuestionIndex < questionsData.length - 1 && (
           <button id="next-button" onClick={handleNext}>
-            Next →
+            Next
           </button>
         )}
       </div>
