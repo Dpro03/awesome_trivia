@@ -5,7 +5,7 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(109, 117, 165);
+  background-color: rgb(96, 121, 173);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -89,13 +89,13 @@ code {
 }
 
 #f-score {
-  font-size: 20px;
+  font-size: 30px;
 }
 
 #header {
   font-size: 50px;
   font-family: fantasy;
-  color: rgb(157, 46, 113);
+  color: rgb(211, 71, 155);
   text-shadow: 2px 2px 4px #000000;
   margin-bottom: 60px;
 }
