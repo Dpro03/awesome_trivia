@@ -20,7 +20,7 @@ const questionsData = [
   },
   {
     question: 'What is the largest country in the world?',
-    options: ['Russia', 'Canada', 'China', 'USA'],
+    options: ['Canada', 'Russia', 'China', 'USA'],
     correctAnswer: 'Russia',
   },
   {
@@ -31,21 +31,21 @@ const questionsData = [
   {
     question: 'What is the largest ocean in the world?',
     options: [
-      'Pacific Ocean',
-      'Atlantic Ocean',
       'Indian Ocean',
+      'Atlantic Ocean',
+      'Pacific Ocean',
       'Arctic Ocean',
     ],
     correctAnswer: 'Pacific Ocean',
   },
   {
     question: 'What is the smallest continent in the world?',
-    options: ['Antarctica', 'Africa', 'Australia', 'South America'],
+    options: ['Africa', 'Antarctica', 'Australia', 'South America'],
     correctAnswer: 'Antarctica',
   },
   {
     question: 'What is the largest desert in the world?',
-    options: ['Sahara', 'Gobi', 'Kalahari', 'Patagonian'],
+    options: ['Kalahari', 'Gobi', 'Sahara', 'Patagonian'],
     correctAnswer: 'Sahara',
   },
   {
