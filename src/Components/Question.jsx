@@ -1,4 +1,4 @@
-// Question.js
+// Question.jsx
 import React, { useState } from 'react';
 
 const Question = ({ questionData, onAnswer }) => {
@@ -13,18 +13,24 @@ const Question = ({ questionData, onAnswer }) => {
   };
 
   return (
-    <div>
+    <div className="question-container">
       <h2>{questionData.question}</h2>
-      <ul>
+      <div className="options-container">
         {questionData.options.map((option, index) => (
-          <li key={index} onClick={() => handleOptionClick(option)}>
+          <div
+            key={index}
+            className={`option ${selectedAnswer === option ? 'selected' : ''}`}
+            onClick={() => handleOptionClick(option)}
+          >
             {option}
-          </li>
+          </div>
         ))}
-      </ul>
-      <button id ="submit-button" onClick={handleSubmit} disabled={!selectedAnswer}>
-        Submit
-      </button>
+      </div>
+      {selectedAnswer && (
+        <button id="submit-button" onClick={handleSubmit}>
+          Submit
+        </button>
+      )}
     </div>
   );
 };

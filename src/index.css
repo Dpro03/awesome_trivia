@@ -5,7 +5,12 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: aqua;
+  background-color: rgb(137, 146, 206);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
 }
 
 code {
@@ -17,16 +22,67 @@ code {
   margin-top: 20px;
   margin-left: 30px;
   border-radius: 7px;
+  font-size: 17px;
 }
 
 #previous-button {
   margin-top: 20px;
-  margin-left: 30px;
   border-radius: 7px;
+  font-size: 17px;
+
 }
 
 #submit-button {
-  margin-top: 20px;
-  margin-left: 30px;
+  margin-top: 8px;
   border-radius: 7px;
+  background-color: rgb(216, 75, 75);
+  font-size: 20px;
+}
+
+#root {
+  text-align: center;
+}
+
+
+.question-container {
+  text-align: center;
+  padding: 20px;
+  font-size: 35px;
+}
+
+.options-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.option {
+  cursor: pointer;
+  padding: 10px;
+  margin: 5px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: gray;
+  transition: background-color 0.3s ease;
+  font-size: 30px;
+}
+
+.option:hover {
+  background-color: #0b710e;
+}
+
+.option.selected {
+  background-color: #0b710e;
+  color: white;
+}
+
+#score {
+  font-size: 30px;
+  color: black;
+  background-color: white;
+  max-width: 7em;
+  margin: auto;
+  padding: 5px;
+  border-radius: 10px;
+  border: 1px solid black;
 }

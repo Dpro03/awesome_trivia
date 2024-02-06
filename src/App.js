@@ -1,6 +1,8 @@
 // App.js
 import React, { useState } from 'react';
 import Question from './Components/Question';
+import './App.css';
+import './index.css';
 
 const questionsData = [
   {
@@ -107,7 +109,7 @@ const App = () => {
   return (
     <div>
       <div>
-        <p>Score: {score}</p>
+        <p id="score">Score: {score}</p>
       </div>
 
       {currentQuestionIndex < questionsData.length ? (
@@ -125,12 +127,12 @@ const App = () => {
       <div>
         {currentQuestionIndex > 0 && (
           <button id="previous-button" onClick={handlePrevious}>
-            Previous
+            ← Previous
           </button>
         )}
         {currentQuestionIndex < questionsData.length - 1 && (
           <button id="next-button" onClick={handleNext}>
-            Next
+            Next →
           </button>
         )}
       </div>
