@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/awesome_trivia/static/css/main.ec7c995a.css",
+    "main.css": "/awesome_trivia/static/css/main.f8b97759.css",
     "main.js": "/awesome_trivia/static/js/main.d329f99e.js",
     "static/js/592.fe689c86.chunk.js": "/awesome_trivia/static/js/592.fe689c86.chunk.js",
     "index.html": "/awesome_trivia/index.html",
-    "main.ec7c995a.css.map": "/awesome_trivia/static/css/main.ec7c995a.css.map",
+    "main.f8b97759.css.map": "/awesome_trivia/static/css/main.f8b97759.css.map",
     "main.d329f99e.js.map": "/awesome_trivia/static/js/main.d329f99e.js.map",
     "592.fe689c86.chunk.js.map": "/awesome_trivia/static/js/592.fe689c86.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ec7c995a.css",
+    "static/css/main.f8b97759.css",
     "static/js/main.d329f99e.js"
   ]
 }
